@@ -3,7 +3,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="listener" class="in.ashokit.bean.MovieListener"/>
+    <bean id="listener" class="in.ashokit.bean.MovieListener">
+        <constructor-arg name="mf" ref="finder"/>
+    </bean>
+
     <bean id="finder" class="in.ashokit.bean.MovieFinder"/>
 
 </beans>

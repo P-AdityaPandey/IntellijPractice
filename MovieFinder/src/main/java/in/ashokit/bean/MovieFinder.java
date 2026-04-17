@@ -13,10 +13,11 @@ public class MovieFinder {
         movieMap.put(2023, List.of("Openhimer","Pathan","Jawan"));
         movieMap.put(2024, List.of("Dune","Inside Out 2","The Fall Guy"));
         movieMap.put(2025, List.of("Avatar","Sikandar","Housefull"));
+    }
 
         public List<String> findMovies(int year){
             return movieMap.get(year);
-        }
+
 
     }
 
